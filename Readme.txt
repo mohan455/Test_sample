@@ -1,7 +1,7 @@
 welcome to my project overview!
 
 
-author:mohan sai kuruba
+author:mohan kuruba
 
 
 created at:22/08/2025
