@@ -1,4 +1,4 @@
-welcome to my project overview!
+welcome to "git hub for beginners" project overview!
 
 
 author:mohan kuruba
