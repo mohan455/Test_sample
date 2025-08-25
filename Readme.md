@@ -8,6 +8,7 @@ then it is moved to git
   created at:22/08/2025
   
 feature:
-	1)As of now no features were added  
+	1)As of now no features were added 
+	2)feature with the pull request is verified 
     
  
