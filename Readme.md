@@ -14,5 +14,7 @@ feature:
     4)With changes now verifying(first time)
 	5)With changes now verifying(second time)
     6)Now the change request is verifying from the remote(frist time)
+	7)Now the change request is verifying from the remote(2nd time)
+	
 	
  
