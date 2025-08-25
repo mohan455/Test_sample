@@ -9,8 +9,8 @@ while 1:
     total_matches_count += 1
     print(f"Game{total_matches_count}")
     computer_choice = (random.choice(mylist))
-    print(f"Computer choice is {computer_choice}")
     user_choice = input("the user chioce is")
+    print(f"Computer choice is {computer_choice}")
     if computer_choice == user_choice:
             print(f"the game is tie,computer choice is {computer_choice} and the user choice is {user_choice}")
             tie_count+=1
