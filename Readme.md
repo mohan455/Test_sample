@@ -10,5 +10,6 @@ then it is moved to git
 feature:
 	1)As of now no features were added 
 	2)feature with the pull request is verified 
+	3)Validating the feature now 
     
  

@@ -52,7 +52,6 @@ if total_matches_count >0:
     print(f"the computer win ratio is: {(computer_win_count/total_matches_count)*100}")
     print(f"the user win ratio is: {(user_win_count/total_matches_count)*100}")
     print(f"match tie ratio is: {(tie_count/total_matches_count)*100}")
-    print(f"the invalid ratio is: {(invalid_count/total_matches_count)*100}")
     if computer_win_count > user_win_count:
         print(f"the ultimate winner is computer out of {total_matches_count} times the computer has won {computer_win_count} times")
     elif user_win_count > computer_win_count:
