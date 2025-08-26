@@ -18,6 +18,8 @@ feature:
     8)Now the change request is verifying from the remote(third time)
 	9)still verifying the change request in differnt scenarios
  	10)still verifying the change request in differnt scenarios(second time)
+	11)change requests are done
+	12)seeing some progress on the change request
 	
 	
  
