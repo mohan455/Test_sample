@@ -39,7 +39,11 @@ def creatingnewcontact():
                             print("the contact saved successfully")
 
 def veiwcontacts():
-
+    with open('contact_directory.txt', 'r') as file:
+        file_empty_check = file.read(1)
+        if not file_empty_check:
+            print("the file is empty,please add the contact first")
+            creatingnewcontact()
     try:
         file_open=open('contact_directory.txt','r')
         content=file_open.readlines()
@@ -65,19 +69,14 @@ def updatingcontact():
     contact_update = input("enter the contact name for the update\n")
     with open('contact_directory.txt', 'r+') as file:
         content = file.readlines()
+    with open('contact_directory.txt','w') as file:
         for item in content:
-            actual_contact = item.split("-")
-            print(actual_contact)
-            if actual_contact[0].strip() == contact_update:
-                print(actual_contact[0])
-                print(contact_update)
-                revised_contact=input("enter the revised contact\n")
-                item.replace(actual_contact[0],revised_contact)
-                print("the contact was updated sucessfuly")
+            duplicate=item.split("-")
+            if duplicate[0].strip==contact_update:
+                duplicate[0]=contact_update
+                file.write(item)
                 break
 
-                #revised_contact_name=input("enter the revised name\n")
-                #file.write(item.replace(actual_contact[0],revised_contact_name))
 
 
 def deletecontact():
@@ -86,5 +85,6 @@ def deletecontact():
         content = file.readlines()
     with open('contact_directory.txt', 'w') as file:
         for item in content:
-            if not item.startswith(contact_remove):
+            duplicate=item.split("-")
+            if not duplicate[0].strip()==contact_remove:
                 file.write(item)
