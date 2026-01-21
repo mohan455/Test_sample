@@ -88,3 +88,7 @@ def deletecontact():
             duplicate=item.split("-")
             if not duplicate[0].strip()==contact_remove:
                 file.write(item)
+            elif duplicate[0].strip()==contact_remove:
+                print("the contact removed successfully")
+            else:
+                print("the contact is not found for deletion")
